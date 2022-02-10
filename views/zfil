@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Covid-19 Status</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+  
+  <nav>
+    <h5><b>COVID-19<br />STATUS</b></h5>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/login">Login</a></li>
+      <li><a href="/register">Register</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="logo">
+      <img src="./resources/img/logo.png" alt="" />
+    </div>
+  </header>
+   <div class="quote">
+      <h1><i class="fa fa-quote-left" aria-hidden="true" style="float:left;"></i> </h1>
+      <h3>Few things in the world are more powerful than a positive push. <br></h3>
+       <h3> A smile. A world of optimism and hope. You can do it when things are tough. <br>
+        <br> Delete the negative; accentuate the positive.<br>
+        <span style="color:#1f8cca;font-size:30px;">We stand with everyone fighting on the frontlines<span><h3>
+        
+    </div>
+
+  <main>
+    <div class="stats">
+      <div class="latest-report">
+        <div class="country">
+          <div class="name">Loading...</div>
+          <div class="change-country">change</div>
+          <div class="search-country hide">
+            <div class="search-box">
+              <input type="text" id="search-input" placeholder="Search Country..." />
+              <img class="close" src="./resources/img/close.svg" alt="" />
+            </div>
+            <div class="country-list"></div>
+          </div>
+        </div>
+        <div class="total-cases">
+          <div class="title">Total Cases</div>
+          <div class="value">0</div>
+          <div class="new-value">+0</div>
+        </div>
+        <div class="recovered">
+          <div class="title">Recovered</div>
+          <div class="value">0</div>
+          <div class="new-value">+0</div>
+        </div>
+        <div class="deaths">
+          <div class="title">Deaths</div>
+          <div class="value">0</div>
+          <div class="new-value">+0</div>
+        </div>
+      </div>
+      <div class="chart">
+        <canvas id="axes_line_chart"></canvas>
+      </div>
+    </div>
+  </main>
+
+
+ <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="#">about us</a></li>
+  	 				<li><a href="#">our services</a></li>
+  	 				<li><a href="#">privacy policy</a></li>
+  	 				<li><a href="#">affiliate program</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+        <ul>
+         <h4>COVID19</h4>
+         <li><a href="#">We stand with everyone fighting on the frontlines</a></li>
+        </ul>
+      </div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+    integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+  <script src="resources/js/countries.js"></script>
+  <script src="resources/js/app.js"></script>
+
+
+
+</body>
+
+</html>
